@@ -45,7 +45,7 @@ header a:hover {
 
 header nav ul {
     list-style-type: none;
-    display: flex; /* Flexbox para melhor controle */
+    display: flex; 
 }
 
 header nav ul li {
@@ -70,35 +70,35 @@ header nav ul li {
 
 .imagem {
     border-radius: 80px;
-    max-width: 100%; /* Para garantir que a imagem não exceda o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
     object-fit: cover;
 }
 
 .s1 {
     width: 100%;
-    height: auto; /* Ajuste para dispositivos móveis */
+    height: auto; 
     color: rgb(0, 0, 0);
     padding-top: 14%;
     display: flex;
-    flex-wrap: wrap; /* Flexbox para melhor responsividade */
+    flex-wrap: wrap; 
 }
 
 h1 {
-    font-size: 2.5rem; /* Ajuste para dispositivos móveis */
-    margin-bottom: 20px; /* Espaçamento inferior */
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
 }
 
 .dois {
-    flex: 1; /* Flexbox para que as colunas se ajustem */
-    min-width: 300px; /* Largura mínima para colunas */
+    flex: 1; 
+    min-width: 300px; 
 }
 
 #qmsomos {
     padding-left: 10%;
     padding-right: 5%;
-    width: 100%; /* Ajuste para dispositivos móveis */
-    font-size: 1.5rem; /* Ajuste para dispositivos móveis */
+    width: 100%; 
+    font-size: 1.5rem; 
     padding-top: 2.5%;
 }
 
@@ -156,6 +156,22 @@ h1 {
     align-items: center;
     display: flex;
     flex-wrap: wrap; 
+   
+}
+
+#formy {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding-left: 37%;
+}
+
+form {
+    width: 40%;
+    background-color: #10b798;
+    border-radius: 10%;
+
 }
 
 footer {
@@ -171,45 +187,67 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Muda a direção do flex para coluna */
-        height: auto; /* Permite que o header ajuste sua altura */
-        padding: 5vw; /* Ajuste para dispositivos móveis */
+        flex-direction: column; 
+        height: auto; 
+        padding: 5vw; 
     }
 
     h1 {
-        font-size: 2rem; /* Diminuir o tamanho da fonte em dispositivos móveis */
+        font-size: 2rem; 
     }
 
     #logo {
-        width: 60px; /* Diminuir o logo em dispositivos móveis */
+        width: 60px; 
     }
 
     .coluna {
-        width: 100%; /* Colunas ocupam 100% da largura em dispositivos móveis */
-        float: none; /* Remove o float */
-        padding: 0; /* Remove o padding */
+        width: 100%; 
+        float: none; 
+        padding: 0; 
     }
 
     .s1 {
-        flex-direction: column; /* Colunas em coluna em dispositivos móveis */
-        padding-top: 10%; /* Ajuste de padding */
+        flex-direction: column; 
+        padding-top: 10%; 
+    }
+
+    #s2 {
+        width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding-left: 34%;
+    }
+
+    #form {
+        width: 70%;
+    }
+
+    #formy {
+        padding-left: 28%;
     }
 }
 
 @media (max-width: 480px) {
     header {
-        font-size: 20px; /* Ajuste do tamanho da fonte para telas pequenas */
+        font-size: 20px; 
     }
 
     header nav ul li {
-        padding: 0 10px; /* Ajuste para telas pequenas */
+        padding: 0 10px; 
     }
 
     h1 {
-        font-size: 1.5rem; /* Diminuir ainda mais o tamanho da fonte */
+        font-size: 1.5rem; 
     }
 
     .imagem {
-        border-radius: 10%; /* Para uma aparência mais redonda em dispositivos móveis */
+        border-radius: 10%; 
     }
+
+    #form {
+        padding-left: 25%;
+    }
+
+    
 }
