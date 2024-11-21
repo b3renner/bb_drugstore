@@ -45,7 +45,7 @@ header a:hover {
 
 header nav ul {
     list-style-type: none;
-    display: flex; 
+    display: flex; /* Flexbox para melhor controle */
 }
 
 header nav ul li {
@@ -70,35 +70,35 @@ header nav ul li {
 
 .imagem {
     border-radius: 80px;
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%; /* Para garantir que a imagem não exceda o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
     object-fit: cover;
 }
 
 .s1 {
     width: 100%;
-    height: auto; 
+    height: auto; /* Ajuste para dispositivos móveis */
     color: rgb(0, 0, 0);
     padding-top: 14%;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Flexbox para melhor responsividade */
 }
 
 h1 {
-    font-size: 2.5rem; 
-    margin-bottom: 20px; 
+    font-size: 2.5rem; /* Ajuste para dispositivos móveis */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
 .dois {
-    flex: 1; 
-    min-width: 300px; 
+    flex: 1; /* Flexbox para que as colunas se ajustem */
+    min-width: 300px; /* Largura mínima para colunas */
 }
 
 #qmsomos {
     padding-left: 10%;
     padding-right: 5%;
-    width: 100%; 
-    font-size: 1.5rem; 
+    width: 100%; /* Ajuste para dispositivos móveis */
+    font-size: 1.5rem; /* Ajuste para dispositivos móveis */
     padding-top: 2.5%;
 }
 
@@ -187,28 +187,28 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; 
-        height: auto; 
-        padding: 5vw; 
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        height: auto; /* Permite que o header ajuste sua altura */
+        padding: 5vw; /* Ajuste para dispositivos móveis */
     }
 
     h1 {
-        font-size: 2rem; 
+        font-size: 2rem; /* Diminuir o tamanho da fonte em dispositivos móveis */
     }
 
     #logo {
-        width: 60px; 
+        width: 60px; /* Diminuir o logo em dispositivos móveis */
     }
 
     .coluna {
-        width: 100%; 
-        float: none; 
-        padding: 0; 
+        width: 100%; /* Colunas ocupam 100% da largura em dispositivos móveis */
+        float: none; /* Remove o float */
+        padding: 0; /* Remove o padding */
     }
 
     .s1 {
-        flex-direction: column; 
-        padding-top: 10%; 
+        flex-direction: column; /* Colunas em coluna em dispositivos móveis */
+        padding-top: 10%; /* Ajuste de padding */
     }
 
     #s2 {
@@ -230,23 +230,31 @@ footer {
 
 @media (max-width: 480px) {
     header {
-        font-size: 20px; 
+        font-size: 20px; /* Ajuste do tamanho da fonte para telas pequenas */
     }
 
     header nav ul li {
-        padding: 0 10px; 
+        padding: 0 10px; /* Ajuste para telas pequenas */
     }
 
     h1 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem; /* Diminuir ainda mais o tamanho da fonte */
     }
 
     .imagem {
         border-radius: 10%; 
     }
 
+    #s2 {
+        width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding-left: 25%;
+    }
+
     #form {
-        padding-left: 25%;
+        padding-left: 0%;
     }
 
     
