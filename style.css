@@ -121,7 +121,7 @@ h1 {
 
 #productSelect {
     font-size:large;
-    background-color: #10b798;
+    background-color: #5cb4dd;
     border-radius: 5%;
 }
 
@@ -169,7 +169,7 @@ h1 {
 
 form {
     width: 40%;
-    background-color: #10b798;
+    background-color: #5cb4dd;
     border-radius: 10%;
 
 }
@@ -242,7 +242,7 @@ footer {
     }
 
     .imagem {
-        border-radius: 10%; 
+        border-radius: 10%; /* Para uma aparência mais redonda em dispositivos móveis */
     }
 
     #s2 {
